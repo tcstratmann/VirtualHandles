@@ -1,0 +1,31 @@
+{
+	"rudder-angle-indicator": 0,
+	
+	"turn-rate": 0,
+	
+	"heeling": 0,
+
+	"heading": 300.0,
+
+	"bow-thruster": 0,
+	
+	"machine-telegraph-left": 20,
+	"machine-telegraph-right": 20,
+
+	"rudder": 0,
+
+	"echolot": 10.5,
+
+	"vhf-watt": 25,
+	"vhf-channel": 16,
+	"vhf-coord-north": "53' 32.521",
+	"vhf-coord-east": "8' 42.341",
+
+	"gps-coord-north": "53' 32.521",
+	"gps-coord-east": "8' 42.341",
+	"gps-course": 300.0,
+	"gps-speed": 10.5,
+
+	"log-speed": 9.5,
+	"log-trip": 45.6
+}

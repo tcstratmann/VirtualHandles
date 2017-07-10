@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+		<title>MATJES - Right Screen</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="./style/elements.css" />
+		<link rel="stylesheet" href="./style/marker.css" />
+		
+		<script src="socket.io/socket.io.js"></script>
+		<script src="./script/jquery-2.2.0.min.js"></script>
+		<script src="./script/controller.js"></script>
+	</head>
+	<body>
+		<div id="container"></div>
+		
+		<script>
+		
+			<!-- SIGNALS FRONT -->
+			showLightSignalsFront("light-signals-front", 350, "margin-top:170px;");
+			
+			<!-- LIGHT OVERVIEW -->
+			showLightOverview("light-overview", 550, "margin-left:25px;margin-right:25px;")
+			
+			<!-- SIGNALS STB -->
+			showLightSignalsStb("light-signals-stb", 350, "margin-top:170px;");
+			
+			<!-- MASTER -->
+			showLightMaster("light-master", 350, "margin-top:20px;");
+		
+		</script>
+		
+	</body>
+</html>

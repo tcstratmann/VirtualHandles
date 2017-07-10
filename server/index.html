@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+		<title>MATJES - Center Screen</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="./style/elements.css" />
+		<link rel="stylesheet" href="./style/marker.css" />
+		
+		<script src="socket.io/socket.io.js"></script>
+		<script src="./script/jquery-2.2.0.min.js"></script>
+		<script src="./script/controller.js"></script>
+	</head>
+	<body>		
+		<div id="container"></div>
+		
+		<!-- ArUco marker -- DEPRECATED --
+		<div class="marker-top-left" style="background-image:url('./image/marker/marker21.png');"></div>
+		<div class="marker-top-right" style="background-image:url('./image/marker/marker22.png');"></div>
+		<div class="marker-bottom-left" style="background-image:url('./image/marker/marker23.png');"></div>
+		<div class="marker-bottom-right" style="background-image:url('./image/marker/marker24.png');"></div>
+		-->
+		
+		<script>
+		
+			<!-- ArUco marker -->
+			<!-- showArUcoMarkers("marker21.png", "marker22.png", "marker23.png", "marker24.png"); -->
+			
+			<!-- TURN RATE -->
+			showScale("turn-rate", 180, "TURN RATE", 400, true, "margin-top:30px;margin-left:10px;");
+			
+			<!-- RUDDER ANGLE INDICATOR -->
+			showScale("rudder-angle-indicator", 35, "RUDDER ANGLE INDICATOR", 400, true, "margin-top:30px;margin-left:60px;");
+			
+			<!-- BOW THRUSTER -->
+			showSliderHorizontal("bow-thruster", 100, "BOW THRUSTER", 400, false, "margin-top:30px;margin-left:60px;");
+			
+			<!-- MACHINE TELEGRAPH -->
+			showMachineTelegraph("machine-telegraph", 320, "float:right;margin-top:40px;margin-right:60px;", false);
+			
+			<!-- RUDDER -->
+			showRudder("rudder", 360, "float:right;margin-top:50px;margin-right:10px;");
+			
+			<!-- HEADING -->
+			showHeading("heading", 230, "margin-top:40px;margin-left:90px;");
+			
+			<!-- COMPASS -->
+			showCompass("compass", 350, "margin-top:30px;margin-left:40px;");
+			
+		</script>
+		
+	</body>
+</html>

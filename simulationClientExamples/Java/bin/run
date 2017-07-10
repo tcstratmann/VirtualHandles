@@ -1,0 +1,2 @@
+#!/bin/sh
+java -cp ../lib/socket.io-client-0.7.0.jar:../lib/engine.io-client-0.7.0.jar:../lib/json-20090211.jar:../lib/okhttp-3.1.2.jar:../lib/okhttp-ws-3.1.2.jar:../lib/okio-1.6.0.jar:. MATJESVirtualHandlesConnector

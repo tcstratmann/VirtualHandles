@@ -1,0 +1,49 @@
+/* Usage: <div class="marker-top-left" style="background-image:url('./image/marker/marker11.png');"></div> */
+
+div.marker-top-left {
+	background-color: #000;
+	margin:0;
+	padding:0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	z-index:42;
+}
+
+div.marker-top-right {
+	background-color: #000;
+	margin:0;
+	padding:0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	right: 0px;
+	z-index:42;
+}
+
+div.marker-bottom-left {
+	background-color: #000;
+	margin:0;
+	padding:0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	left: 0px;
+	z-index:42;
+}
+
+div.marker-bottom-right {
+	background-color: #000;
+	margin:0;
+	padding:0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	right: 0px;
+	z-index:42;
+}

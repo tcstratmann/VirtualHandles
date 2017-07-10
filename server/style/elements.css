@@ -1,0 +1,1216 @@
+@font-face {
+	font-family: eurocaps;
+	src: url(eurocaps.ttf);
+}
+
+html {
+	background-image: url("../image/misc/bg.png");
+	background-repeat: repeat;
+	
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	
+	font-family: 'eurocaps', arial;
+	font-size: 20px;
+	color: white;
+	
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#container {
+	display: block;
+	width: 1350px;
+	margin: 0px auto;
+	padding-top: 2%;
+}
+
+#offis-logo {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	display: block;
+	
+	width: 110px;
+	padding: 5px;
+	
+	background-color: white;
+	z-index: -1;
+	
+	border: 3px solid #252525;
+	border-radius: 10px;
+}
+
+
+/**
+ * Scale
+ **/
+div.scale-start {
+	display: block; 
+	float: left;
+	margin-top: 50px;
+}
+
+div.scale-bar-red {
+	display: block; 
+	float: left;
+	width: 10px; 
+	background-color: #ff300f;  
+	margin-left: 4px;
+	border-radius: 5px;
+}
+
+div.scale-middle {
+	display: block; 
+	float: left;
+	height: 20px; 
+	width: 10px; 
+	background-color: gray;  
+	margin-left: 4px; 
+	margin-top: 40px; 
+	border-radius: 5px;
+}
+
+div.scale-bar-green {
+	display: block; 
+	float: left;
+	width: 10px; 
+	background-color: #00c327;  
+	margin-left: 4px;
+	border-radius: 5px;
+}
+
+
+/**
+ * Scale
+ **/
+div.scale {
+	display: block;
+	float: left;
+}
+
+div.scale-heading {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	text-align: center;
+	text-decoration: none;
+	
+	padding-bottom: 5px;
+}
+
+div.scale-background {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	background-image: url("../image/element/scale.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.scale-container {
+	width: 100%;
+	height: 75px;
+	overflow: hidden;
+}
+
+div.scale-left {
+	clear: both;
+	float: left;
+	display: block;
+	
+	font-size: 26px;
+	color: #fd4122;
+	
+	margin-left: 60px;
+	width: 30px;
+}
+
+div.scale-right {
+	float: right;
+	display: block;
+	
+	font-size: 26px;
+	color: #00c225;
+	
+	margin-right: 60px;
+	width: 30px;
+}
+
+
+/**
+ * Slider 100 Horizontal
+ **/
+div.slider-horizontal {
+	display: block;
+	float: left;
+}
+
+div.slider-horizontal-heading {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	text-align: center;
+	text-decoration: none;
+	
+	padding-bottom: 5px;
+}
+
+div.slider-100-horizontal-background {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	background-image: url("../image/element/slider-100-horizontal.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.slider-horizontal-value {
+	width: 70%;
+	padding-left: 15%;
+	padding-top: 10.5%;
+}
+
+input.slider-horizontal-input {
+	display: block;
+	float: left;
+	width: 108%;
+	margin-left: -3.5%;
+}
+
+
+/**
+ * Heading
+ **/
+div.heading {
+	display: block;
+	float: left;
+	
+	background-image: url("../image/element/heading.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+
+div.heading-value {
+	display: block;
+	float: left;
+	width: 98%;
+	
+	margin-top: 3%;
+	
+	font-size: 28px;
+	text-align: right;
+}
+
+
+/**
+ * Compass
+ **/
+div.compass {
+	display: block;
+	float: left;
+}
+
+div.compass-background {
+	background-image: url("../image/element/compass-background.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: block;
+	
+	width: 100%;
+	height: 100%;
+	
+	-webkit-transform: rotate(0deg);       
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+	
+    transform-origin: center center;
+    
+    z-index: 1;
+}
+
+div.compass-foreground {
+	background-image: url("../image/element/compass-foreground.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	position: relative;
+	top: -100%;
+	left: 0px;
+	display: block;
+	
+	width: 100%;
+	height: 100%;
+	
+	
+	z-index: 2;
+}
+ 
+
+/**
+ * Machine Telegraph
+ **/
+div.machine-telegraph {
+	display: block;
+	float: left;
+}
+
+div.machine-telegraph-background {
+	background-image: url("../image/element/machine-telegraph.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+input.machine-telegraph-slider-left {
+	display: block;
+	float: left;
+	
+	height:  50px;
+	width: 460px;
+	margin-top: 248px;
+	margin-left: -130px;
+}
+
+input.machine-telegraph-slider-right {
+	display: block;
+	float: right;
+	
+	height: 50px;
+	width: 460px;
+	margin-top: -52px;
+	margin-right: -118px;
+}
+
+
+/**
+ * Rudder
+ **/
+div.rudder {
+	display: block;
+	float: left;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+div.rudder-background {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	background-image: url("../image/misc/skala.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+img.rudder-slider {
+	width: 68%;
+	height: 90%;
+	
+	display: block;
+	float: left;
+	
+	margin-left: 16.3%;
+	margin-top: -36%;
+	
+	-webkit-transform: rotate(0deg);       
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+	
+    transform-origin: center 30.2%;
+    z-index: 1000;
+}
+
+
+/**
+ * Echolot
+ **/
+div.echolot {
+	display: block;
+	float: left;
+}
+
+div.echolot-background {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	background-image: url("../image/element/echolot.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.echolot-pwr {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 115px;
+	height: 50px;
+	
+	margin-left: 15px;
+	margin-top: 70px;
+	
+	display: block;
+	float: left;
+}
+
+div.echolot-display {
+	width: 210px;
+	height: 100px;
+	
+	margin-right: 60px;
+	margin-top: 35px;
+	padding-top: 40px;
+	
+	display: block;
+	float: right;
+	
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+
+/**
+ * VHF
+ **/
+div.vhf {
+	display: block;
+	float: left;
+}
+
+div.vhf-background {
+	display: block;
+	float: left;
+	width: 100%;
+	
+	background-image: url("../image/element/vhf.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.vhf-pwr {	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	width: 120px;
+	height: 50px;
+	
+	margin-top: 70px;
+	margin-left: 15px;
+	
+	float: left;
+	display: block;
+}
+
+div.vhf-display {
+	width: 255px;
+	height: 140px;
+	
+	margin-top: 30px;
+	margin-left: 25px;
+	margin-right: 25px;
+	
+	float: left;
+	display: block;
+}
+
+div.vhf-display-watt {
+	width: 180px;
+	height: 50px;
+	
+	float: left;
+	display: block;
+	
+	font-size: 28px;
+	
+	margin-top: 10px;
+}
+
+div.vhf-display-channel {
+	width: 50px;
+	height: 50px;
+	
+	float: right;
+	display: block;
+	
+	font-size: 35px;	
+	font-weight: bold;
+	
+	margin-top: 20px;
+}
+
+div.vhf-display-coords {
+	width: 230px;
+	height: 50px;
+	
+	float: left;
+	display: block;
+	
+	font-size: 22px;
+
+	margin-left: 10px;
+}
+
+div.vhf-buttons {
+	width: 60px;
+	height: 125px;
+	
+	margin-top: 40px;
+	margin-left: 15px;
+	
+	float: left;
+	display: block;
+}
+
+div.vhf-button-up {
+	background-image: url("../image/button/button-up.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 60px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+}
+
+div.vhf-button-down {
+	clear: both;
+	
+	background-image: url("../image/button/button-down.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 60px;
+	height: 60px;
+	
+	margin-top: 5px;
+	
+	float: left;
+	display: block;
+}
+
+div.vhf-menu {
+	background-image: url("../image/button/button-menu.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	clear: both;
+	
+	width: 120px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+div.vhf-vol-minus {
+	background-image: url("../image/button/button-vol-.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 28px;
+	margin-top: 10px;
+}
+
+div.vhf-vol-plus {
+	background-image: url("../image/button/button-vol+.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+div.vhf-channel {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 63px;
+	height: 58px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 35px;
+	margin-top: 10px;
+	padding-top: 2px;
+	padding-right: 2px;
+	
+	text-align: center;
+	font-size: 40px;
+}
+
+/**
+ * Navtex
+ **/
+div.navtex {
+	display: block;
+	float: left;
+}
+
+div.navtex-background {
+	background-image: url("../image/element/navtex.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+}
+
+div.navtex-pwr {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 50px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 20px;
+	margin-top: 70px;
+}
+
+div.navtex-up {
+	background-image: url("../image/button/button-up.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 60px;
+	height: 60px;
+	
+	clear: left;
+	float: left;
+	display: block;
+	
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+div.navtex-down {	
+	background-image: url("../image/button/button-down.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 60px;
+	height: 60px;
+	
+	clear: left;
+	float: left;
+	display: block;
+	
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+div.navtex-menu {
+	background-image: url("../image/button/button-menu.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	width: 120px;
+	height: 60px;
+	
+	clear: left;
+	float: left;
+	display: block;
+	
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+div.navtex-display {
+	float: right;
+	display: block;
+	
+	margin-right: 62px;
+	margin-top: 9px;
+	
+	width: 235px;
+}
+
+div.navtex-display-list {
+	float: right;
+	display: block;
+	
+	margin-top: 22px;
+	
+	height: 130px;
+	width: 100%;
+	
+	overflow: hidden;
+}
+
+div.navtex-display-entry {
+	float: left;
+	display: block;
+
+	width: 99%;
+	height: 25px;
+	overflow: hidden;
+	
+	padding-left: 1%;
+}
+
+div.navtex-display-text {
+	float: right;
+	display: block;
+	
+	margin-top: 22px;
+	
+	height: 130px;
+	width: 100%;
+	
+	overflow: hidden;
+}
+
+
+/**
+ * GPS
+ **/
+div.gps {
+	display: block;
+	float: left;
+}
+
+div.gps-background {
+	background-image: url("../image/element/gps.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+	height: 280px;
+}
+
+div.gps-pwr {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 50px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 22px;
+	margin-top: 75px;
+}
+
+div.gps-display {
+	width: 195px;
+	height: 145px;
+	
+	float: left;
+	display: block;
+	
+	margin-top: 33px;
+	margin-left: 10px;
+}
+
+div.gps-display-coords {
+	float: left;
+	display: block;
+	font-size: 22px;	
+	margin: 7px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+div.gps-display-course {
+	float: left;
+	display: block;
+	font-size: 22px;
+	margin: 7px;
+}
+
+div.gps-right {
+	float: right;
+	display: block;
+	width: 100px;
+}
+
+div.gps-right-nav {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 70px;
+	height: 70px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 5px;
+	margin-top: 30px;
+}
+
+div.gps-right-button-up {
+	background-image: url("../image/button/button-up.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 80px;
+	height: 70px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+div.gps-menu {
+	clear: both;
+	background-image: url("../image/button/button-menu.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 22px;
+	margin-top: 7px;
+}
+
+div.gps-enter {
+	background-image: url("../image/button/enter-grey.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 120px;
+	height: 60px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 45px;
+	margin-top: 7px;
+}
+
+div.gps-right-button-down {
+	background-image: url("../image/button/button-down.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 80px;
+	height: 70px;
+	
+	float: right;
+	display: block;
+	
+	margin-right: 20px;
+	margin-top: 0px;
+}
+
+
+/**
+ * Log
+ **/
+div.log {
+	display: block;
+	float: left;
+}
+
+div.log-background {
+	background-image: url("../image/element/log.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+}
+
+div.log-pwr {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 115px;
+	height: 50px;
+	
+	float: left;
+	display: block;
+	
+	margin-left: 15px;
+	margin-top: 70px;
+}
+
+div.log-display {
+	display: block;
+	float: left;
+	
+	width: 210px;
+	height: 140px;
+	
+	margin-top: 34px;
+	margin-left: 10px;
+	
+	padding-top: 0px;
+}
+
+div.log-display-speed-lable {
+	clear: both;
+	display: block;
+	float: left;
+	font-size: 26px;
+	margin: 4px;
+}
+
+div.log-display-speed-value {
+	clear: both;
+	display: block;
+	float: right;
+	font-size: 20px;
+	margin-right: 6px;
+	font-weight: bold;
+}
+
+div.log-display-trip-lable {
+	clear: both;
+	display: block;
+	float: left;
+	font-size: 26px;
+	margin: 4px;
+}
+
+div.log-display-trip-value {
+	clear: both;
+	display: block;
+	float: right;
+	font-size: 20px;
+	margin-right: 6px;
+	font-weight: bold;
+}
+
+
+/**
+ * Lights
+ **/
+div.light-signals-front {
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+
+div.light-signals-front-background {
+	background-image: url("../image/element/light-signals-front.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+	height: 200px;
+	display: block;
+	
+	padding-top: 100px;
+}
+
+div.light-signals-front-green {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 160px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+div.light-signals-front-white {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 160px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+div.light-overview {
+	float: left;
+	display: block;
+}
+
+div.light-overview-background {
+	background-image: url("../image/element/light-overview.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+	height: 440px;
+	display: block;
+	
+	margin-top: 10px;
+	padding-top: 220px;
+}
+
+div.light-overview-top {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+div.light-overview-bb {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100px;
+	height: 80px;
+	
+	clear: both;
+	float: left;
+	display: block;
+	
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+div.light-overview-stb {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100px;
+	height: 80px;
+
+	float: right;
+	display: block;
+	
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+div.light-overview-anchor {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 180px;
+	height: 80px;
+	
+	clear: both;
+	display: block;
+	float: left;
+
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 180px;
+}
+
+div.light-overview-stern {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 180px;
+	height: 80px;
+	
+	clear: both;
+	display: block;
+	float: left;
+
+	margin-left: 180px;
+}
+
+
+div.light-signals-stb {
+	display: block;
+	float: left;
+}
+
+div.light-signals-stb-background {
+	background-image: url("../image/element/light-signals-stb.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+	height: 260px;
+	display: block;
+	
+	padding-top: 80px;
+}
+
+div.light-signals-stb-red {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+div.light-signals-stb-white {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 160px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+div.light-master {
+	float: left;
+	display: block;
+}
+
+div.light-master-background {
+	background-image: url("../image/element/light-master.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 100%;
+	height: 120px;
+	display: block;
+	
+	padding-top: 80px;
+}
+
+div.light-master-alarm {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 160px;
+	height: 80px;
+	
+	display: block;
+	
+	margin: 0px auto;
+}
+
+
+/**
+ * Input Range
+ **/
+input[type=range].horizontal {
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+}
+
+input[type=range].vertical {
+    -webkit-appearance: none;
+	
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	
+	background: transparent;
+	border: none;
+}
+
+input[type=range].horizontal::-webkit-slider-runnable-track {
+    height: 6px;
+    background: transparent;
+    
+    -webkit-appearance: none;
+    border: none;
+}
+
+input[type=range].vertical::-webkit-slider-runnable-track {
+    height: 6px;
+    background: transparent;
+    
+    -webkit-appearance: none;
+    border: none;
+}
+
+input[type=range].horizontal::-webkit-slider-thumb {
+	background-image: url("../image/button/button-grey-horizontal.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 45px;
+	height: 70px;
+	margin-top: -30px;
+	margin-left: -2px;
+	
+    -webkit-appearance: none;
+    border: none;
+}
+
+input[type=range].vertical::-webkit-slider-thumb {
+	background-image: url("../image/button/button-grey-vertical.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	width: 40px;
+	height: 80px;
+	margin-top: -30px;
+	
+    -webkit-appearance: none;
+    border: none;
+}
+
+input[type=range].horizontal:focus {
+    outline: none;
+}
+
+input[type=range].vertical:focus {
+    outline: none;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+jsdoc -d doc -R README.md server/script/controller.js server/script/server.js 
+

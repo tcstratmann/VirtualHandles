@@ -1,0 +1,47 @@
+/**
+ * MATJES-UI-Model
+ * 
+ * @file Model of MATJES-UI
+ * @author Tim Claudius Stratmanm
+ * @version 2016-02-29
+ *
+ **/
+
+In general:
+The assigned *id* of the element is used as variable name for setting the value,
+depending on the type of the element further values are adressed by *id*-*name*,
+e.g. for the element of type *gps* with the id *myGPS* the value *course* is adressed by *myGPS-course*.
+
+See: MATJES-UI-Model.json
+
+Scales:
+rudder-angle-indicator
+turn-rate
+heeling
+
+bow-thruster
+
+heading
+
+rudder
+
+echolot
+
+vhf-watt
+vhf-channel
+vhf-coord-north
+vhf-coord-east
+
+gps-coord-north
+gps-coord-east
+gps-course
+gps-speed
+
+log-speed
+log-trip
+
+machine-telegraph-left
+machine-telegraph-right
+
+TODO: light-master ACK
+
