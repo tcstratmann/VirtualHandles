@@ -9,7 +9,7 @@ Screen-based Virtual Handles and Information Displays for Ship Bridge Simulators
 
 A Node.js server handles data exchange and delivers different views as HTML files accessable per name.
 We use [Socket.IO](https://github.com/socketio/socket.io) for communication between views and the simulation.
-The folder *SimulationClientExamples* includes code snippets in Java and Python, as well as a full example integration into the open source interactive 3D ship simulator [BridgeCommand](https://github.com/bridgecommand/bc).
+The folder *client-examples* includes code snippets in Java and Python, as well as a full example integration into the open source interactive 3D ship simulator [BridgeCommand](https://github.com/bridgecommand/bc).
 
 **Model Description**
 
