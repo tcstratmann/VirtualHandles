@@ -1,7 +1,7 @@
 Virtual Handles
 ===============
 
-*Authors: Uwe Gruenefeld, Tim Claudius Stratmann, Julia Gerdes*
+*Authors: Uwe Gruenefeld, Tim Claudius Stratmann, Julia Stratmann*
 
 **General Description**
 
