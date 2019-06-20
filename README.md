@@ -3,6 +3,10 @@ Virtual Handles
 
 *Authors: Uwe Gruenefeld & Tim Claudius Stratmann (software), Julia Stratmann (graphics)*
 
+This software is licensed under the MIT license.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The graphics in this work are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> (Author: Julia Stratmann).
+
 **General Description**
 
 Screen-based Virtual Handles and Information Displays for Ship Bridge Simulators
